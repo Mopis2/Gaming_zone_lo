@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/847b3bc794.js" crossorigin="anonymous"></script>
     <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
@@ -19,18 +20,36 @@
     }
 
     a:link {
-        color: white;
+        color: black;
         text-decoration: none;
     }
 
     h1 {
         font-family: 'Krona One', sans-serif;
+        text-align: center;
     }
 
-    .body {
-        background-position: left;
-        background-attachment: scroll;
-        height: 100px;
+    h3 {
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+    }
+
+    body {
+        width: 1500px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    audio {
+        width: 270px;
+        text-align: center;
     }
 
     .container-xl {
@@ -46,13 +65,13 @@
     }
 
     .home:hover {
-        background-color: purple;
+        background-color: #FF4922;
         color: white;
         text-decoration: none;
     }
 
     .cont:hover {
-        background-color: black;
+        background-color: #52CD33;
         color: white;
         text-decoration: none;
     }
@@ -60,26 +79,31 @@
     .hr {
         padding: 10px;
     }
+
+    .insta:hover {
+        background-color: linear-gradient (purple, pink);
+        text-decoration: none;
+    }
+
+    .bande {}
     </style>
-    <title>Le meilleurs site en matière de eux vidéo !</title>
+    <title>Le site à l'autre là</title>
 </head>
 
-<body class="body">
+<body>
+    <div class="bande">
+        <h1>La thunasse</h1>
+    </div>
+    <div class="row shadow-sm p-3 mb-5 bg-grey justify-content-center">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item text-center rounded-pill border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Home</a></li>
+                <li class="nav-item text-center rounded-pill border border-dark cont"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Contactez-moi</a></li>
+                <li class="nav-item text-center rounded-pill border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">À propos</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="container-xl p-5 mb-6 bg-grey text-center rounded border-dark">
-        <div class="row shadow-sm p-3 mb-5 bg-grey justify-content-center">
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item text-center rounded-pill border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Home</a></li>
-                    <li class="nav-item text-center rounded-pill border border-dark cont"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Contactez-moi</a></li><i class="fab fa-instagram-square"title="benoit_ls01"></i>
-                    <li class="nav-item text-center rounded-pill border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">À propos</a></li>
-                </ul>
-            </nav>
-        </div>
-        <header>
-            <center>
-                <h1>Gaming Zone</h1>
-            </center>
-        </header>
         <div class="contain text-center container-fluid">
             <div class="row">
                 <article>
@@ -122,11 +146,28 @@
                             <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="http://lageekroom.com/ces-10-jeux-video-violents-qui-ont-fait-de-nous-des-psychopathes-ou-pas/">Ces 10 jeux vidéo violents qui ont fait de nous des psychopathes (ou pas)</a></p>
                             <p class="rounded-pill border border-dark home"><a class="nav-link active" href="http://lageekroom.com/voyage-au-japon-acheter-ses-jeux-a-akihabara-bon-plan-ou-attrape-pigeon/">Voyage au Japon : acheter ses jeux à Akihabara : bon plan ou attrape pigeon ?</a></p>
                             <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="https://lageekroom.com/hellblade-senuas-sacrifice-explications-sur-lhistoire-et-avis-sur-la-version-xbox-one-x/">Hellblade: Senua’s Sacrifice, explications sur l’histoire</a></p>
-                            <h3>Shreksophone</h3>
+                            <h3>Shreksophone</h3><br>
                             <form id="formulaire" method="post" action="#">
                                 <audio controls="controls">
                                     <source src="shrekophone.mp3" type="audio/mpeg" /></audio>
-                            </form>
+                            </form><br>
+                            <h3>Contactez-moi :</h3><br>
+                            <ul>
+                                <h4>Instagram</h4>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default " data-toggle="dropdown"><i class="insta fab fa-instagram fa-5x "></i></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <p class="insta">benoit_ls01</p><br>
+                                        </li><br>
+                                </div>
+                                <h4>Twitter :</h4>
+                                    <button type="button" class="btn btn-default"><i class="twi fab fa-twitter fa-5x "></i><a href="https://twitter.com/LouisBenot3"></a></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>s
+                                            <a class="insta" href="https://twitter.com/LouisBenot3">@LouisBenot3</a><br>
+                                        </li><br>
+                            </ul>
                         </div>
                     </div>
                 </article>
@@ -138,12 +179,11 @@
             <footer>
                 <address>
                     <p>
-                        Jacques Vannet<br>
-                        CNAM<br>
-                        Chalon-sur-Saône
+                        Benoît Louis<br>
+                        Depuis sa chambre<br>
                     </p>
                 </address>
-                Les jeux vidéo ©CNAM 2020
+                Mon site ©Moi 2020
             </footer>
         </div>
     </div>
