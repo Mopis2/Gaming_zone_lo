@@ -121,25 +121,31 @@
     }
 
     .zoom {
+        border-color: black;
         transition-property: transform;
         -webkit-transition-property: transform;
         transition-duration: .5s;
         transition-timing-function: ease-out;
-        margin: 30px 40px 30px 40px;
+        margin: 10px 40px 0px 40px;
         padding: 0 150px 0 150px;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0px;
+        
     }
 
     .zoom:hover {
+        border-color: black;
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
-        color: #B8B8B8;
+        background-color: #B8B8B8;
+        
     }
 
     .active {
+        border-color: black;
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
-        color: #B8B8B8;
+        background-color: #B8B8B8;
+        
     }
 
 
@@ -152,24 +158,24 @@
     }
 
     .bande {
-        background-image: -webkit-linear-gradient (white, black);
         -webkit-background-clip: ;
         text-align: center;
+        box-shadow: 0 10px;
     }
     </style>
     <title>Le site à l'autre là</title>
 </head>
 
 <body>
-    <div class="shadow-sm p-3 mb-5 justify-content-center bande">
-        <h1>La thunasse</h1><br>
+    <div class=" justify-content-center bande">
+        <h1>LA THUNASSE</h1><br>
         <ul class="nav justify-content-center">
             <li class="nav-item border zoom active "><a class="nav-link" href="https://mopis2.github.io/Gaming_zone_lo/">Home</a></li><br>
             <li class="nav-item border zoom "><a class="nav-link" href="">Stonks</a></li><br>
             <li class="nav-item border zoom "><a class="nav-link" href="">Oui</a></li>
         </ul>
     </div>
-    <div class="container-xl p-5 mb-6 text-center">
+    <div class="container-fluid p-5 mb-6 text-center">
         <div class="contain text-center container-fluid">
             <div class="row">
                 <article>
