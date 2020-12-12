@@ -11,12 +11,13 @@
     <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     a {
@@ -34,8 +35,7 @@
 
     h1 {
         font-family: 'Krona One', sans-serif;
-        text-align: center;
-        padding-top: 40px;
+        padding-top: 10px;
     }
 
     h3 {
@@ -48,8 +48,6 @@
         text-align: center;
     }
 
-    body {}
-
     li {
         list-style-type: none;
     }
@@ -59,42 +57,44 @@
         text-align: center;
     }
 
-    .container-xl {
-        background-color: silver;
+    footer {
+        text-align: center;
+        background-color: blue;
     }
 
-    .grey {
-        background-color: #B1B1B1;
+    .sous {
+        background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+        transition: background-size .5s;
     }
 
-    .contain {
-        background-color: silver;
+    .sous:hover {
+        background-size: 100% 100%;
     }
 
-    .home:hover {
-        background-color: #FF4922;
-        color: white;
+    .cont {
+        position: relative;
         text-decoration: none;
+
     }
 
     .cont:hover {
-        background-color: #52CD33;
-        color: white;
+        color: #ae4136;
         text-decoration: none;
-    }
-
-    .hr {
-        padding: 10px;
     }
 
     .insta {
         color: black;
+        border-radius: 10px;
+        padding: 0 10px 0 10px;
     }
 
     .insta:hover {
+        color: white;
         background: -webkit-linear-gradient(300deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        transition-property: background;
+        transition: all 0.2s ease-out;
+        transition: all 0.2s ease-in;
+
     }
 
     .twi {
@@ -103,29 +103,65 @@
 
     .twi:hover {
         color: #0074b2;
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-in;
     }
-.navi {
-background-color: blue;
-}
+
+    .navi {
+        background-color: blue;
+    }
+
+    .navi>li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .zoom {
+        transition-property: transform;
+        -webkit-transition-property: transform;
+        transition-duration: .5s;
+        transition-timing-function: ease-out;
+        margin: 0 40px 0 40px;
+        padding: 0 100px 0 100px;
+    }
+
+    .zoom:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+
+    }
+
+    .active {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+
+    .grey {
+        background-color: #D1D1D1;
+    }
+
+    .reseau {
+        padding-top: 20px;
+    }
+
     .bande {
-      background-color: linear-gradient(#08720E,#0F6314);
+        background-image: -webkit-linear-gradient (white, black);
+        -webkit-background-clip: ;
+        text-align: center;
     }
     </style>
     <title>Le site à l'autre là</title>
 </head>
 
 <body>
-    <div class="bande">
-        <h1>La thunasse</h1>
-       </div>
-    <div class="shadow-sm p-3 mb-5 bg-grey justify-content-center">
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item text-center rounded border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Home</a></li>
-                <li class="nav-item text-center rounded border border-dark cont"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">Contactez-moi</a></li>
-                <li class="nav-item text-center rounded border border-dark home"><a class="nav-link active" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">À propos</a></li>
-            </ul>
-        </nav>
+    <div class="shadow-sm p-3 mb-5 justify-content-center bande">
+        <h1>La thunasse</h1><br>
+        <ul class="nav justify-content-center">
+            <li class="nav-item rounded border zoom active "><a class="nav-link" href="https://mopis2.github.io/Gaming_zone_lo/">Home</a></li>
+            <li class="nav-item rounded border zoom "><a class="nav-link" href="https://wallet.uphold.com/dashboard">Stonks</a></li>
+            <li class="nav-item rounded border zoom "><a class="nav-link" href="https://bfc.moodle.lecnam.net/pluginfile.php/36923/mod_workshop/intro/atelier2.html#">À propos</a></li>
+        </ul>
     </div>
     <div class="container-xl p-5 mb-6 bg-grey text-center rounded border-dark">
         <div class="contain text-center container-fluid">
@@ -140,7 +176,7 @@ background-color: blue;
                                 <hr width="100%">
                                 <p>Les tests du jeu sont déjà nombreux sur le net, mais nous allons tout de même rapidement revenir sur le titre développé par Rebellion. L’histoire de Sniper Elite 4 se déroule durant la seconde guerre mondiale, en Italie. Ayant déjà terminé le jeu à sa sortie sur PS4, nous nous sommes retrouvés en terrain connu. La grande force de cet opus est de proposer des maps de grande taille et divers objectifs, que l’on peut aborder dans l’ordre que l’on souhaite. Le level design est excellent et réserve de nombreux passages, et chaque mission propose des objectifs principaux et secondaires, mais également pas mal de collectibles à dénicher. Le jeu vous fera participer à une dizaine de niveaux assez variés qui vous occuperont au moins 1h chacun. Fusil de précision, arme de poing, mitraillette, grenades : votre personnage dispose de l’équipement du parfait soldat prêt à en découdre avec les nazis, avec également la possibilité de gagner des niveaux pour améliorer tout ça ! Plusieurs modes de difficulté sont présents, permettant à tous les joueurs d’y trouver leur compte, que l’on recherche du réalisme ou une physique de balle simplifiée permettant d’enchaîner plus facilement les headshots. Et que dire de la <abbr title="La caméra tueuse !">kill-cam</abbr>, cette caméra qui suit la balle jusqu’à une pauvre victime qui voit ses os se fracturer au ralenti, a part qu’elle est toujours aussi jouissive. Alors certes, le jeu a ses défauts, comme une IA pas toujours au taquet ou certains objectifs qui se répètent d’une mission à l’autre, mais la licence reste un de nos plaisirs coupables, et retrouver ce quatrième opus sur Switch est un réel plaisir, histoire de jouer bien calé au fond du lit.</p>
                             </div>
-                            <div class="grey">
+                            <div>
                                 <h3>Xbox Series X : Bright Memory</h3>
                                 <p><img src="http://lageekroom.com/wp-content/uploads/2020/11/test-bright-memory-series-x-800x445.jpg" class="rounded-xl img-fluid" alt="Responsive image"></p>
                                 <p>En mars 2020, après plus d’un an en Accès Anticipé, <em>Bright Memory</em> est arrivé sur Steam et GOG en version 1.0. Affiché à 8,19€, le titre est avant tout perçu comme un prologue à Bright Memory : Infinite, la version finale qui devait débarquer en cette fin d’année sur PC sous la forme d’une mise à jour gratuite pour ceux qui ont déjà Bright Memory.</p>
@@ -148,57 +184,78 @@ background-color: blue;
                                 <blockquote cite="./Atelier2_files/saved_resource">Pour accompagner la sortie de la version PC, le seul développeur chinois qui se cache derrière le nom du studio avait annoncé le portage de Bright Memory : Infinite sur PlayStation 4 et Xbox One…</blockquote>
                                 <hr width="100%">
                                 <p>Jusqu’à l’Inside Xbox dédié aux jeux tiers à venir sur Xbox Series X|S qui avait permis d’apprendre que BM Infinite allait seulement débarquer sur la nouvelle génération. Au passage, le jeu avait impressionné et avait même volé la vedette à tous les autres, d’autant que c’était l’un des rares à véritablement montrer du gameplay. Seulement voilà, Zeng Xian Cheng (de son véritable nom) n’a pas pu assurer le développement de la version complète pour la sortie des Xbox Series. En attendant 2021 de voir ce que vaudra l’un des jeux qui a le plus attiré l’attention, il a œuvré au portage de son Bright Memory original. Une façon d’introduire son œuvre en échange de 7,99€ et de donner aux nouveaux acheteurs un autre jeu qui n’est pas disponible sur les Xbox One… Mais cela valait-il vraiment la peine ?</p>
-                        </div>
+                            </div>
                             <div>
                                 <h3>La saga Yakuza. Jeu vidéo japonais au présent</h3>
                                 <p><img src="http://lageekroom.com/wp-content/uploads/2020/10/yakuza-wallpaper-800x445.jpg" class="rounded-xl img-fluid" alt="Responsive image"></p>
                                 <p>La série de jeux vidéo Yakuza ne représente pas seulement la licence la plus vigoureuse de SEGA aujourdʼhui. Cette saga, qui court depuis 2005 en suivant un rythme de sortie quasi annuel, donne à voir lʼexemple rare dʼun jeu vidéo parfaitement intégré aux rouages dʼune industrie de masse et dans le même temps soucieux de développer un commentaire singulier et insatiable sur la société dont il sʼinspire. Les jeux Yakuza sont indissociables de leur époque, dépeinte à la manière dʼune fresque, et cʼest à travers lʼanalyse de ces aventures que Victor Moisan vous proposera une immersion dans le Japon dʼhier et dʼaujourdʼhui. Lʼauteur vous présentera ainsi les origines des jeux Yakuza au fil dʼenquêtes, de témoignages et de recherches poussées.</p>
                                 <hr width="100%">
                                 <p> Seront aussi évoqués <q>lʼhistoire de SEGA</q> et le parcours de Toshihiro Nagoshi, créateur de la saga. Le concept original de la série sera à son tour détaillé : de sa volonté dʼêtre une réaction à GTA autant quʼun désir ambitieux dʼoffrir une plongée réaliste dans le quartier de Kabukicho et le monde de la pègre japonaise. Chaque épisode sera ensuite analysé : une étude au cas par cas des sept volets « canoniques », agrémentée d’anecdotes et de portraits de personnalités importantes de lʼhistoire des jeux (scénaristes, acteurs, etc.). L’ouvrage est à découvrir sur le site de l’éditeur à cette adresse.</p>
+                            </div>
                         </div>
-                      </div>
-                        <div class="col-xl-3 ">
-                            <h3>Nos Articles Phares</h3>
-                            <p class="rounded-pill nav-item border border-dark cont"><a class="nav-link active" href="#">Bon Plan Assassin’s Creed Valhalla PS5</a></p>
-                            <p class="rounded-pill border border-dark home"><a class="nav-link active" href="#">Bon Plan FIFA 21</a></p>
-                            <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="#">Précommandez Call of Duty Cold War ici</a></p>
-                            <p class="rounded-pill border border-dark home"><a class="nav-link active" href="#">Ni No Kuni à prix réduit sur Nintendo Switch</a></p>
-                            <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="https://lageekroom.com/silent-hill-les-tops-et-les-flops-de-la-saga-de-konami/">Silent Hill : les tops et les flops de la saga de Konami</a></p>
-                            <p class="rounded-pill border border-dark home"><a class="nav-link active" href="http://lageekroom.com/ps-vita-voici-une-selection-de-jeux-a-posseder-sur-la-console-de-sony/">PS Vita : voici une sélection de jeux à posséder sur la console de Sony</a></p>
-                            <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="http://lageekroom.com/ces-10-jeux-video-violents-qui-ont-fait-de-nous-des-psychopathes-ou-pas/">Ces 10 jeux vidéo violents qui ont fait de nous des psychopathes (ou pas)</a></p>
-                            <p class="rounded-pill border border-dark home"><a class="nav-link active" href="http://lageekroom.com/voyage-au-japon-acheter-ses-jeux-a-akihabara-bon-plan-ou-attrape-pigeon/">Voyage au Japon : acheter ses jeux à Akihabara : bon plan ou attrape pigeon ?</a></p>
-                            <p class="rounded-pill border border-dark cont"><a class="nav-link active" href="https://lageekroom.com/hellblade-senuas-sacrifice-explications-sur-lhistoire-et-avis-sur-la-version-xbox-one-x/">Hellblade: Senua’s Sacrifice, explications sur l’histoire</a></p>
+                        <div class="col-xl-3 text-center">
+                            <h3>Les p'tits liens</h3>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="#">Bon Plan Assassin’s Creed Valhalla PS5</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="#">Bon Plan FIFA 21</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="#">Précommandez Call of Duty Cold War ici</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="#">Ni No Kuni à prix réduit sur Nintendo Switch</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="https://lageekroom.com/silent-hill-les-tops-et-les-flops-de-la-saga-de-konami/">Silent Hill : les tops et les flops de la saga de Konami</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="http://lageekroom.com/ps-vita-voici-une-selection-de-jeux-a-posseder-sur-la-console-de-sony/">PS Vita : voici une sélection de jeux à posséder sur la console de Sony</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="https://lageekroom.com/ces-10-jeux-video-violents-qui-ont-fait-de-nous-des-psychopathes-ou-pas/">Ces 10 jeux vidéo violents qui ont fait de nous des psychopathes (ou pas)</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="http://lageekroom.com/voyage-au-japon-acheter-ses-jeux-a-akihabara-bon-plan-ou-attrape-pigeon/">Voyage au Japon : acheter ses jeux à Akihabara : bon plan ou attrape pigeon ?</a></p>
+                            <hr width="100%">
+                            <p class=" cont sous"><a class="nav-link " href="https://lageekroom.com/hellblade-senuas-sacrifice-explications-sur-lhistoire-et-avis-sur-la-version-xbox-one-x/">Hellblade: Senua’s Sacrifice, explications sur l’histoire</a></p>
+                            <hr width="100%">
                             <h3>Shreksophone</h3><br>
                             <form id="formulaire" method="post" action="#">
                                 <audio controls="controls">
                                     <source src="shrekophone.mp3" type="audio/mpeg" /></audio>
                             </form><br>
                             <h3>Contactez-moi :</h3><br>
-                            <ul>
-                                <h4>Instagram</h4>
-                                <button type="button" class="btn btn-default"><a class="insta fab fa-instagram fa-7x" href="https://www.instagram.com/benoit_ls01/"></a></button>
-                                <h4>Twitter :</h4>
-                                <button type="button" class="btn btn-default"><a class="twi fab fa-twitter fa-7x " href="https://twitter.com/LouisBenot3"></a></button>
-                            </ul>
+                            <div class="rounded grey reseau">
+                                <ul>
+                                    <h4>Instagram :</h4>
+                                    <button type="button" class="btn btn-default"><a class="insta fab fa-instagram fa-7x " href="https://www.instagram.com/benoit_ls01/"></a></button>
+                                    <h4>Twitter :</h4>
+                                    <button type="button" class="btn btn-default"><a class="twi fab fa-twitter fa-7x " href="https://twitter.com/LouisBenot3"></a></button>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <footer>
-                <address>
-                    <p>
-                        Benoît Louis<br>
-                        Depuis sa chambre<br>
-                    </p>
-                </address>
-                Mon site ©Moi 2020
-            </footer>
+    <footer>
+        <div class="row">
+            <div class="col-xl-4">
+                <p>
+                    Benoît Louis<br>
+                    Depuis sa chambre<br>
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <p></p>
+            </div>
+            <div class="col-xl-4">
+                <p></p>
+            </div>
         </div>
-    </div>
+        </address>
+        <div class="row text-align">
+            <p>
+                Mon site ©Moi 2020
+            </p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
