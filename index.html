@@ -12,7 +12,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
     * {
         margin: 0;
         padding: 0;
@@ -22,6 +21,7 @@
 
     body {
         background-color: white;
+        width: 100%;
     }
 
     a {
@@ -63,7 +63,9 @@
 
     footer {
         text-align: center;
-        background-color: blue;
+        background-color: #212529;
+        color: lightgrey;
+        padding: 10px;
     }
 
     .sous {
@@ -106,7 +108,7 @@
     }
 
     .twi:hover {
-        color: #0074b2;
+        color: #00acee;
         transition: all 0.2s ease-out;
         -webkit-transition: all 0.2s ease-in;
     }
@@ -120,34 +122,27 @@
         padding-right: 30px;
     }
 
-    .zoom {
-        border-color: black;
-        transition-property: transform;
-        -webkit-transition-property: transform;
-        transition-duration: .5s;
-        transition-timing-function: ease-out;
-        margin: 10px 40px 0px 40px;
-        padding: 0 150px 0 150px;
-        border-radius: 10px 10px 0 0px;
-        
+    .fondu {
+        color: black;
+        margin: 10px 40px 10px 40px;
+        padding: 10px 100px 10px 100px;
+        border-radius: 10px 10px 10px 10px;
+
     }
 
-    .zoom:hover {
-        border-color: black;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        background-color: #B8B8B8;
-        
-    }
+    .fondu:hover {
+        color: #B8B8B8;
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-in;
+        background-color: #2C2828;
 
-    .active {
-        border-color: black;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        background-color: #B8B8B8;
-        
     }
-
+        .fondut:hover {
+        color: #B8B8B8;
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-in;
+        background-color: #2C4F28;
+    }
 
     .grey {
         background-color: #D1D1D1;
@@ -160,19 +155,32 @@
     .bande {
         -webkit-background-clip: ;
         text-align: center;
-        box-shadow: 0 10px;
+        border-bottom: 10px solid #212529;
+
+    }
+    .hr {
+        height: 2px;
+        background-color: #D1D1D1;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .pad {
+        padding: 0;
+        margin: 0;
     }
     </style>
     <title>Le site à l'autre là</title>
 </head>
 
 <body>
-    <div class=" justify-content-center bande">
+    <div class=" justify-content align-items-center bande">
         <h1>LA THUNASSE</h1><br>
         <ul class="nav justify-content-center">
-            <li class="nav-item border zoom active "><a class="nav-link" href="https://mopis2.github.io/Gaming_zone_lo/">Home</a></li><br>
-            <li class="nav-item border zoom "><a class="nav-link" href="">Stonks</a></li><br>
-            <li class="nav-item border zoom "><a class="nav-link" href="">Oui</a></li>
+            <li class="nav-item "><a class="nav-link fondu" href="https://mopis2.github.io/Gaming_zone_lo/">Home</a></li><br>
+            <li class="nav-item "><a class="nav-link fondu" href="">Stonks</a></li><br>
+            <li class="nav-item "><a class="nav-link fondu" href="">Oui</a></li>
         </ul>
     </div>
     <div class="container-fluid p-5 mb-6 text-center">
@@ -247,22 +255,31 @@
         </div>
     </div>
     <footer>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-xl-4">
-                <p>
-                    Benoît Louis<br>
-                    Depuis sa chambre<br>
+                <p class="pad">
+                    Benoît Louis
+                    <hr align="center" class="hr">
+                    Fait un site tranquillou
                 </p>
             </div>
             <div class="col-xl-4">
-                <p></p>
+                <p class="pad">
+                    Je modifie presque constamment le site
+                    <hr align="center" class="hr">
+                    Revient de temps en temps si tu veux voir sont évolution <i class="far fa-smile-wink"></i>
+                </p>
             </div>
             <div class="col-xl-4">
-                <p></p>
+                <p class="pad">
+                    Si t'as jeté un coup d'œil à mon site
+                    <hr align="center" class="hr">
+                    Envoi moi le mot 'strapontin' parce que c'est marrant
+                </p>
             </div>
         </div>
         </address>
-        <div class="row text-align">
+        <div class="row justify-content-center">
             <p>
                 Mon site ©Moi 2020
             </p>
