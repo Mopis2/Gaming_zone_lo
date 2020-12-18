@@ -11,6 +11,25 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/js" href="block.js">
     <script src="https://kit.fontawesome.com/847b3bc794.js" crossorigin="anonymous"></script>
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script id="rendered-js" >
+$(document).ready(function () {
+  //Dès qu'on clique sur #b1, on applique hide() au titre
+  $(".b1").click(function () {
+    $(".css-box").hide();
+    $(".html-box").show();
+  });
+
+  //Dès qu'on clique sur #b1, on applique show() au titre
+  $(".b2").click(function () {
+    $(".html-box").hide();
+    $(".css-box").show();
+  });
+});
+//# sourceURL=pen.js
+</script>
+
     <title>Le site à l'autre là</title>
 </head>
 
@@ -24,39 +43,103 @@
         </ul>
     </div>
     <div class="container-fluid p-5 mb-6 text-center">
-        <div class="contain text-center container-fluid">
             <div class="row">
                 <article>
                     <div class="row">
                         <div class="col-xl-9 ">
-                            <div>
                                 <h3 class="gauche">Transitions animés</h3>
-                                <p>Les transitions sont très utiles pour une belle mise en page ou pour rajouter du cachet a ton site</p>
+                                <p>On va pouvoir créer diverses transitions sur des éléments pour agrémenter vos pages web.Les transitions sont très utiles pour une belle mise en page ou pour rajouter du cachet a ton site.</p>
                                 <hr width="100%">
-                                <p>Je t'ai mis le code de chaques transitions avec leur application juste en dessous pour que tu puisse t'y retrouver tranquillement </p>
+                                <p class="p">Je t'ai mis le code de chaques transitions avec leur application juste en dessous pour que tu puisse t'y retrouver tranquillement </p>
+                                <p class="p">On commence par un simple fondu (C'est une transition qu'on utilise assez souvent pour une page web)</p>
                                 <nav class="noir" id="navig">
                                     <ul class="nav justify-content-center">
                                         <li class="taille">
-                                            <a class="bout b1" id="html-link" href="#html-box" role="button">
+                                            <button class="bout b1" id="btn" role="button">
                                                 HTML
-                                            </a>
+                                            </button>
                                         </li>
                                         <li class="taille">
-                                            <a class="bout b2" href="#css-box" role="button">
+                                            <button class="bout b2" id="btn" role="button">
                                                 CSS
-                                            </a>
+                                            </button>
                                         </li>
                                     </ul>
                                 </nav>
-                                <div>
-                                    <span class="tag-f"><</span>
-                                    <span class="tag-h1"><h1></span>
+                                <div class="html-box">
+                                    <p>
+                                    <span class="tag-f"><</span> 
+                                    <span class="tag-h5">h2</span>
                                     <span class="tag-f">></span>
-                                    <span class="tag-h1"></span>
-                                    <span class="tag-h1"></span>
-                                    <span class="tag-h1"></span>
+                                    <span class="tag-txt">Fondu</span>
+                                    <span class="tag-f"><</span> 
+                                    <span class="tag-h5">h2</span>
+                                    <span class="tag-f">></span>
+                                    <br>
+                                    <span class="tag-f espace"><</span> 
+                                    <span class="tag-h5">div </span>
+                                    <span class="tag-class">class</span>
+                                    <span class="tag-txt">=</span>
+                                    <span class="tag-class1">"element img-circle fondu"</span>
+                                    <span class="tag-f">></span>
+                                    <span class="tag-f"><</span> 
+                                    <span class="tag-f">/</span> 
+                                    <span class="tag-h5">div</span>
+                                    <span class="tag-f">></span> 
+                                </p>
                                 </div>
-                            </div>
+                                <div class="css-box">
+                                <span class="tag-class">.fondu </span>
+                                <span class="tag-f">{</span>
+                                <br>
+                                <span class="tag-arg">background-color</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-violet">#3d3d3e</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-arg">height</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-violet">200</span>
+                                <span class="tag-h5">px</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-arg">width</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-violet">200</span>
+                                <span class="tag-h5">px</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-arg">border-radius</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-violet">50</span>
+                                <span class="tag-h5">%</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-f">}</span>
+                                <br>
+                                <span class="tag-class">.fondu</span>
+                                <span class="tag-f">:hover {</span>
+                                <br>
+                                <span class="tag-arg">transition</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-arg2">all </span>
+                                <span class="tag-violet">0.5</span>
+                                <span class="tag-h5">s </span>
+                                <span class="tag-arg2">ease-out</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-arg">background-color</span>
+                                <span class="tag-f">:</span>
+                                <span class="tag-violet">#FF3232</span>
+                                <span class="tag-f">;</span>
+                                <br>
+                                <span class="tag-f">}</span>
+                                </div>
+                                <div>
+                                <div class="noir" id="navig"><p class="resultat">Résultat</div>
+                                    <h2 class="gras">Fondu</h2>
+                                    <div class="element img-circle fondu-rond"></div>
+                                    </div>
                         </div>
                         <div class="col-xl-3 text-center">
                             <h3>Les p'tits liens</h3>
@@ -84,23 +167,28 @@
                                 <audio controls="controls">
                                     <source src="shrekophone.mp3" type="audio/mpeg" /></audio>
                             </form><br>
-                            <h3>Contactez-moi :</h3><br>
-                            <div class="rounded grey reseau">
-                                <ul>
-                                    <h4>Instagram :</h4>
-                                    <button type="button" class="btn btn-default"><a class="insta fab fa-instagram fa-7x " href="https://www.instagram.com/benoit_ls01/"></a></button>
-                                    <h4>Twitter :</h4>
-                                    <button type="button" class="btn btn-default"><a class="twi fab fa-twitter fa-7x " href="https://twitter.com/LouisBenot3"></a></button>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </article>
             </div>
-        </div>
     </div>
-    <footer>
+     <footer>
+        <h4>Contactez-moi :</h4><br>
+            <div class="row justify-content-center">
+                <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <h6>Instagram :</h6>
+                            <button type="button" class="btn btn-default"><a class="insta fab fa-instagram fa-4x " href="https://www.instagram.com/benoit_ls01/"></a></button>
+                        </div>
+                        <div class="col-xl-6">
+                            <h6>Twitter :</h6>
+                            <button type="button" class="btn btn-default"><a class="twi fab fa-twitter fa-4x " href="https://twitter.com/LouisBenot3"></a></button>
+                        </div>
+                </div>
+            </div>
+
         <div class="row justify-content-center">
+
             <div class="col-xl-4">
                 <p class="pad">
                     Benoît Louis
@@ -111,7 +199,9 @@
             <div class="col-xl-4">
                 <p class="pad">
                     Je modifie presque constamment le site
+                </p>
                     <hr align="center" class="hr">
+                    <p>
                     Revient de temps en temps si tu veux voir sont évolution <i class="far fa-smile-wink"></i>
                 </p>
             </div>

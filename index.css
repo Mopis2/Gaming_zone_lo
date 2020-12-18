@@ -52,14 +52,18 @@ audio {
 }
 
 footer {
+    position: relative;
     text-align: center;
     background-color: #212529;
     color: lightgrey;
-    padding: 10px;
+    padding: 15px;
+}
+button:focus {
+  outline:none;
 }
 
 .sous {
-    background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat center bottom / 0 100%;
     transition: background-size .5s;
 }
 
@@ -82,25 +86,26 @@ footer {
     color: black;
     border-radius: 10px;
     padding: 0 10px 0 10px;
+    transition: all 0.3s ease-out;
+    background: linear-gradient(300deg, #212529, #212529, #212529, #212529, #212529, #212529, #212529, #212529, #212529);
 }
 
 .insta:hover {
     color: white;
-    background: -webkit-linear-gradient(300deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
-    transition-property: background;
-    transition: all 0.2s ease-out;
-    transition: all 0.2s ease-in;
+    background: linear-gradient(300deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
+    transition: all 0.3s ease-out;
+
 
 }
 
 .twi {
     color: black;
+    transition: all 0.3s ease-out;
 }
 
 .twi:hover {
     color: #00acee;
-    transition: all 0.2s ease-out;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-out;
 }
 
 .navi {
@@ -114,7 +119,7 @@ footer {
 
 .fondu {
     color: black;
-    margin: 10px 40px 10px 40px;
+    margin: 0px 20px 10px 20px;
     padding: 10px 100px 10px 100px;
     border-radius: 10px 10px 10px 10px;
 
@@ -123,7 +128,7 @@ footer {
 .fondu:hover {
     color: #B8B8B8;
     transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     background-color: #2C2828;
 
 }
@@ -131,22 +136,19 @@ footer {
 .fondut:hover {
     color: #B8B8B8;
     transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     background-color: #2C4F28;
 }
 
-.grey {
-    background-color: #D1D1D1;
-}
 
 .reseau {
     padding-top: 20px;
 }
 
 .bande {
-    -webkit-background-clip: ;
     text-align: center;
-    border-bottom: 10px solid #212529;
+    border-bottom: 20px solid #212529;
+ 
 
 }
 
