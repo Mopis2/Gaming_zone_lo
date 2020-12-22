@@ -15,16 +15,7 @@ body {
 }
 
 a {
-    color: black;
-}
-
-a:hover {
-    color: black;
-}
-
-a:link {
-    color: black;
-    text-decoration: none;
+    color: black!important;
 }
 
 h1 {
@@ -57,9 +48,6 @@ footer {
     background-color: #212529;
     color: lightgrey;
     padding: 15px;
-}
-button:focus {
-  outline:none;
 }
 
 .sous {
@@ -148,7 +136,7 @@ button:focus {
 .bande {
     text-align: center;
     border-bottom: 20px solid #212529;
- 
+
 
 }
 
