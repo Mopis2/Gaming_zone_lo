@@ -27,6 +27,20 @@ $(document).ready(function () {
     $(".css-box").show();
   });
 });
+// -----------------------------------------------------------------------
+$(document).ready(function () {
+  //Dès qu'on clique sur #b1, on applique hide() au titre
+  $(".b3").click(function () {
+    $(".css-box2").hide();
+    $(".html-box2").show();
+  });
+
+  //Dès qu'on clique sur #b1, on applique show() au titre
+  $(".b4").click(function () {
+    $(".html-box2").hide();
+    $(".css-box2").show();
+  });
+});
 //# sourceURL=pen.js
 </script>
 
@@ -47,13 +61,20 @@ $(document).ready(function () {
                 <article>
                     <div class="row">
                         <div class="col-xl-9 ">
-                                <h3 class="gauche">Transitions animés</h3>
+                                <h2 class="gauche">Transitions animés</h2>
                                 <p>On va pouvoir créer diverses transitions sur des éléments pour agrémenter vos pages web.Les transitions sont très utiles pour une belle mise en page ou pour rajouter du cachet a ton site.</p>
+                                <br>
+                                <p>On ajoutera se code pour exécuter du bootstrap que j'utilise dans mon html:<br>
+                                    <span class="police">
+                                        <pre>
+
+<span><</span>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"<span>></span></pre></span></p>
                                 <hr width="100%">
+<!---------------------------------------------------------------------------------------------Transition1------------------------------------------------------------------------------------------------->
+                                <h2 class="gras">Fondu</h2>
                                 <p class="p">Je t'ai mis le code de chaques transitions avec leur application juste en dessous pour que tu puisse t'y retrouver tranquillement </p>
-                                <p class="p">On commence par un simple fondu (C'est une transition qu'on utilise assez souvent pour une page web)</p>
-                                <p class="p">Tu n'oubliera pas d'ajouter se code pour exécuter du bootstrap :<br>
-                                    <span class="police"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"></span></p>
+                                <p class="p">On commence par un simple fondu (C'est une transition qu'on utilise assez souvent pour une page web)</p>      
                                 <nav class="noir" id="navig">
                                     <ul class="nav justify-content-center">
                                         <li class="taille">
@@ -90,9 +111,54 @@ $(document).ready(function () {
                                </pre> 
                                 </div>
                                 <div>
-                                <div class="noir" id="navig"><p class="resultat">Résultat</div>
-                                    <h2 class="gras">Fondu</h2>
+                                <div class="noir" id="navig"><p class="resultat">Résultat</p></div>
                                     <div class="element img-circle fondu-rond"></div>
+                                    </div>
+                        </div>
+                    </div>
+                    <hr width="100%">
+<!---------------------------------------------------------------------------------------------Transition2------------------------------------------------------------------------------------------------->
+                        <div class="col-xl-9 ">
+                        <h2 class="gras">Rotation</h2>
+                                <p class="p">Ici, on va faire une rotation d'élément</p>   
+                                <nav class="noir" id="navig">
+                                    <ul class="nav justify-content-center">
+                                        <li class="taille">
+                                            <button class="bout b3" id="btn" role="button">
+                                                HTML
+                                            </button>
+                                        </li>
+                                        <li class="taille">
+                                            <button class="bout b4" id="btn" role="button">
+                                                CSS
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="html-box2">
+                                        <pre>
+<span class="tag-f"><</span><span class="tag-h5">h2</span><span class="tag-f">></span><span class="tag-txt">Rotatition</span><span class="tag-f"><</span><span class="tag-h5">h2</span><span class="tag-f">></span>
+<span class="tag-f espace"><</span><span class="tag-h5">div </span><span class="tag-class">class</span><span class="tag-txt">=</span><span class="tag-class1">"element rotation"</span><span class="tag-f">></span><span class="tag-f"><</span><span class="tag-f">/</span><span class="tag-h5">div</span><span class="tag-f">></span> 
+                                    </pre>
+                                </div>
+                                <div class="css-box2">
+                                    <pre>
+<span class="tag-class">.fondu </span><span class="tag-f">{</span>
+<span class="tag-arg">background-color</span><span class="tag-f">:</span><span class="tag-violet">#3d3d3e</span><span class="tag-f">;</span>
+<span class="tag-arg">height</span><span class="tag-f">:</span><span class="tag-violet">200</span><span class="tag-h5">px</span><span class="tag-f">;</span>
+<span class="tag-arg">width</span><span class="tag-f">:</span><span class="tag-violet">200</span><span class="tag-h5">px</span><span class="tag-f">;</span>
+<span class="tag-arg">border-radius</span><span class="tag-f">:</span><span class="tag-violet">50</span><span class="tag-h5">%</span><span class="tag-f">;</span>
+<span class="tag-arg">transition</span><span class="tag-f">:</span><span class="tag-arg2">all </span><span class="tag-violet">0.5</span><span class="tag-h5">s </span><span class="tag-arg2">ease-out</span><span class="tag-f">;</span>
+<span class="tag-f">}</span>
+<span class="tag-class">.fondu</span><span class="tag-f">:hover {</span>
+<span class="tag-arg">transition</span><span class="tag-f">:</span><span class="tag-arg2">all </span><span class="tag-violet">0.5</span><span class="tag-h5">s </span><span class="tag-arg2">ease-out</span><span class="tag-f">;</span>
+<span class="tag-arg">background-color</span><span class="tag-f">:</span><span class="tag-violet">#FF3232</span><span class="tag-f">;</span>
+<span class="tag-f">}</span>
+                               </pre> 
+                                </div>
+                                <div>
+                                <div class="noir" id="navig"><p class="resultat">Résultat</p></div>
+                                    <div class="element rotation"></div>
                                     </div>
                         </div>
                         <div class="col-xl-3 text-center">

@@ -7,6 +7,18 @@ nav {
 button:focus {
   outline:none!important;
 }
+a {
+    color: black!important;
+}
+
+a:hover {
+    color: black!important;
+}
+
+a:link {
+    color: black!important;
+    text-decoration: none;
+}
 
 .p {
     text-align: left;
@@ -45,6 +57,23 @@ button:focus {
 }
 
 .css-box {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+.html-box2 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box2 {
     background-color: black;
     text-align: left;
     padding: 5px;
