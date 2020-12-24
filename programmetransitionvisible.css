@@ -4,21 +4,15 @@
 nav {
     margin-top: 20px;
 }
+
 button:focus {
-  outline:none!important;
+    outline: none !important;
 }
+
 a {
-    color: black!important;
+    color: black;
 }
 
-a:hover {
-    color: black!important;
-}
-
-a:link {
-    color: black!important;
-    text-decoration: none;
-}
 
 .p {
     text-align: left;
@@ -64,6 +58,7 @@ a:link {
     height: 300px;
     display: none;
 }
+
 .html-box2 {
     background-color: black;
     text-align: left;
@@ -82,17 +77,132 @@ a:link {
     display: none;
 }
 
+.html-box3 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box3 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.html-box4 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box4 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.css-box5 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.html-box5 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box6 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.html-box6 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box7 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.html-box7 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
+.css-box8 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+
+.html-box8 {
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    overflow: scroll;
+    height: 300px;
+
+}
+
 .resultat {
     font-size: 30px;
     color: white;
     padding: 10px;
 }
+
 .gras {
- font-family: 'Oswald', sans-serif;
- font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 .police {
-  font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.surb {
+    font-family: 'JetBrains Mono', monospace;
+    color: #FF3232;
 }
 
 /*....................TagHTML.........................*/
@@ -129,15 +239,18 @@ a:link {
 
 /*.....................TagCSS..........................*/
 .tag-arg {
-  color : lightblue;
-  margin-left: 30px;
+    color: lightblue;
+    margin-left: 30px;
 }
+
 .tag-arg2 {
-  color : lightblue;
+    color: lightblue;
 }
+
 .tag-violet {
-  color: #D40EF3;
+    color: #D40EF3;
 }
+
 /*.....................Résultats.......................*/
 
 .fondu-rond {
@@ -153,6 +266,136 @@ a:link {
 }
 
 .fondu-rond:hover {
-    transition: all 0.5s ease-out;
     background-color: #FF3232;
+}
+
+.rotation {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease-out;
+    height: 200px;
+    width: 200px;
+    background-color: #3d3d3e;
+}
+
+.rotation:hover {
+    transform: rotate(45deg);
+    background-color: #FF3232;
+}
+
+.opacité {
+    transition: all 0.5s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #FF3232;
+    opacity: 0.5;
+}
+
+.opacité:hover {
+    opacity: 1;
+}
+
+.délai {
+    transition: background-color 0.5s ease-out 1s;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #3d3d3e;
+}
+
+.délai:hover {
+    background-color: #FF3232;
+}
+
+.zoom {
+    transition: transform 0.5s ease-out;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #FF3232;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.déformation {
+    transition: transform 0.5s ease-out;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #FF3232;
+}
+
+.déformation:hover {
+    transform: skew(45deg);
+}
+
+.hauteur {
+    transition: all 0.5s ease-out;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #FF3232;
+}
+
+.hauteur:hover {
+    height: 300px;
+}
+
+.largeur {
+    transition: all 0.5s ease-out;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #FF3232;
+}
+
+.largeur:hover {
+    width: 300px;
+}
+
+.déplacement {
+    transition: all 0.5s ease-out;
+    top: 0;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #FF3232;
+    position: relative;
+}
+
+.déplacement:hover {
+    top: 30px;
 }
